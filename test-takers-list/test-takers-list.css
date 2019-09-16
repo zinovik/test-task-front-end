@@ -1,0 +1,201 @@
+.test-takers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-takers-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-takers-table .test-takers-columns {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+}
+
+.test-takers-table .test-takers-columns div {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.test-takers-table .test-takers-data {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  cursor: pointer;
+}
+
+.test-takers-table .test-takers-data:hover {
+  background-color: lightgrey;
+}
+
+.test-takers-table .test-takers-data div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.test-takers-table .test-takers-columns-picture {
+  width: 90px;
+}
+
+.test-takers-table .test-takers-columns-picture img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+  object-position: 0px;
+}
+
+.test-takers-table .test-takers-columns-title {
+  width: 70px;
+}
+
+.test-takers-table .test-takers-columns-firstname {
+  width: 120px;
+}
+
+.test-takers-table .test-takers-columns-lastname {
+  width: 120px;
+}
+
+.test-takers-table .test-takers-columns-gender {
+  width: 100px;
+}
+
+.test-takers-table .test-takers-columns-email {
+  width: 330px;
+}
+
+.test-takers-table .test-takers-columns-login {
+  width: 170px;
+}
+
+.test-takers-table .test-takers-columns-password {
+  width: 110px;
+}
+
+.test-takers-table .test-takers-columns-address {
+  width: 400px;
+}
+
+.test-takers-sort-by {
+  display: none;
+  padding: 5px;
+}
+
+.test-takers-data .test-takers-description {
+  display: none;
+}
+
+.test-takers-description {
+  font-weight: bold;
+}
+
+.test-takers-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.test-takers-pagination div {
+  padding: 5px;
+}
+
+.test-takers-details-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-takers-details-container .test-takers-details {
+  border: 1px black solid;
+  padding: 10px;
+  background-color: white;
+}
+
+.test-takers-details-container .test-takers-details .test-takers-details-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 10px 0px;
+}
+
+.test-takers-details-container .test-takers-details .test-takers-details-close-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 5px 0px;
+}
+
+@media (max-width: 800px) {
+  .test-takers-table .test-takers-data {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .test-takers-table .test-takers-columns {
+    display: none;
+  }
+
+  .test-takers-table .test-takers-columns-picture {
+    width: auto;
+    align-self: center;
+  }
+
+  .test-takers-table .test-takers-columns-title {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-firstname {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-lastname {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-gender {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-email {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-login {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-password {
+    width: auto;
+  }
+
+  .test-takers-table .test-takers-columns-address {
+    width: auto;
+  }
+
+  .test-takers-sort-by {
+    display: block;
+  }
+
+  .test-takers-table .test-takers-data .test-takers-description {
+    display: block;
+  }
+
+  .test-takers-pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+}
